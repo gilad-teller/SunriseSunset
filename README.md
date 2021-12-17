@@ -1,7 +1,7 @@
 # SunriseSunset
 https://sunrise-sunset.org/ API client
 
-##SunriseSunsetClient
+## SunriseSunsetClient
 This is the basic package. You need to supply it with an HttpClient instance that you need to manage by yourself.
 ```C#
 using HttpClient httpClient = new();
@@ -9,7 +9,7 @@ SunriseSunsetHttpClient sunriseSunsetClient = new();
 Response response = await sunriseSunsetClient.Get(httpClient, 51.5010, -0.1406, new DateTime(2021, 1, 1));
 ```
 
-##SunriseSunsetClient Dependency Injection
+## SunriseSunsetClient Dependency Injection
 This extension allows you to easily add SunriseSunsetClient to your .Net 5 application
 Add this to the Startup:
 ```C#
