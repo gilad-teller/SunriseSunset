@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>net.tellerapps.sunrise-sunset-client.dependency-injection</name>
+    </assembly>
+    <members>
+        <member name="T:net.tellerapps.sunrise_sunset_client.dependency_injection.SunriseSunsetClientExtension">
+            <summary>
+            Sunrise sunset extension class
+            </summary>
+        </member>
+        <member name="M:net.tellerapps.sunrise_sunset_client.dependency_injection.SunriseSunsetClientExtension.AddSunriseSunsetClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add the SunriseSunsetHttpClient, SunriseSunsetService, and a named HttpClient to the Services Collection
+            </summary>
+            <param name="services">Services collection</param>
+            <returns>Services collection</returns>
+        </member>
+        <member name="T:net.tellerapps.sunrise_sunset_client.dependency_injection.SunriseSunsetService">
+            <summary>
+            Sunrise Sunset Service
+            </summary>
+        </member>
+        <member name="M:net.tellerapps.sunrise_sunset_client.dependency_injection.SunriseSunsetService.#ctor(net.tellerapps.sunrise_sunset_client.SunriseSunsetHttpClient,System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Sunrise Sunset Service constructor
+            </summary>
+            <param name="sunriseSunsetHttpClient">Http client for SunriseSunset</param>
+            <param name="httpClientFactory">Http client factory</param>
+        </member>
+        <member name="M:net.tellerapps.sunrise_sunset_client.dependency_injection.SunriseSunsetService.Get(System.Double,System.Double,System.DateTime)">
+            <summary>
+            Get sunrise sunset data
+            </summary>
+            <param name="latitude">Latitude</param>
+            <param name="longitude">Longitude</param>
+            <param name="date">Date</param>
+            <returns>Sunrise sunset data</returns>
+        </member>
+    </members>
+</doc>

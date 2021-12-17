@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication50</name>
+    </assembly>
+    <members>
+        <member name="T:WebApplication50.Controllers.SunriseSunsetController">
+            <summary>
+            API controller for SunriseSunset
+            </summary>
+        </member>
+        <member name="M:WebApplication50.Controllers.SunriseSunsetController.#ctor(net.tellerapps.sunrise_sunset_client.dependency_injection.SunriseSunsetService)">
+            <summary>
+            SunriseSunsetController constructor
+            </summary>
+            <param name="sunriseSunsetService">SunriseSunsetService injected dependency</param>
+        </member>
+        <member name="M:WebApplication50.Controllers.SunriseSunsetController.Get(System.Double,System.Double,System.DateTime)">
+            <summary>
+            Get sunrise and sunset data
+            </summary>
+            <param name="latitude">Longitude</param>
+            <param name="longitude">Latitude</param>
+            <param name="date">Date</param>
+            <returns>Sunrise and sunset data</returns>
+        </member>
+        <member name="T:WebApplication50.Program">
+            <summary>
+            Main class
+            </summary>
+        </member>
+        <member name="M:WebApplication50.Program.Main(System.String[])">
+            <summary>
+            Main method
+            </summary>
+            <param name="args">Program arguments</param>
+        </member>
+        <member name="M:WebApplication50.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create the host builder
+            </summary>
+            <param name="args">Arguments</param>
+            <returns>IHostBuilder</returns>
+        </member>
+        <member name="T:WebApplication50.Startup">
+            <summary>
+            DI startup
+            </summary>
+        </member>
+        <member name="M:WebApplication50.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup constructor
+            </summary>
+            <param name="configuration">Configurations from appSettings.json</param>
+        </member>
+        <member name="P:WebApplication50.Startup.Configuration">
+            <summary>
+            Configurations
+            </summary>
+        </member>
+        <member name="M:WebApplication50.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Services collections</param>
+        </member>
+        <member name="M:WebApplication50.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
+            </summary>
+            <param name="app">Application builder</param>
+            <param name="env">Environment</param>
+        </member>
+    </members>
+</doc>
