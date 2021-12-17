@@ -4,5 +4,198 @@
         <name>net.tellerapps.sunrise-sunset-client</name>
     </assembly>
     <members>
+        <member name="T:net.tellerapps.sunrise_sunset_client.Response">
+            <summary>
+            Response class
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Response.Results">
+            <summary>
+            Results object
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Response.Status">
+            <summary>
+            Response status
+            </summary>
+        </member>
+        <member name="T:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults">
+            <summary>
+            SunriseSunsetResults class
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.Sunrise">
+            <summary>
+            Sunrise time
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.Sunset">
+            <summary>
+            Sunset time
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.SolarNoon">
+            <summary>
+            Solar noon
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.DayLength">
+            <summary>
+            Day length
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.CivilTwilightBegin">
+            <summary>
+            Civil twilight begin
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.CivilTwilightEnd">
+            <summary>
+            Civil twilight end
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.NauticalTwilightBegin">
+            <summary>
+            Nautical twilight begin
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.NauticalTwilightEnd">
+            <summary>
+            Nautical twilight end
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.AstronomicalTwilightBegin">
+            <summary>
+            Astronomical twilight begin
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.AstronomicalTwilightEnd">
+            <summary>
+            Astrononical twilight end
+            </summary>
+        </member>
+        <member name="M:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.#ctor(net.tellerapps.sunrise_sunset_client.Results)">
+            <summary>
+            SunriseSunsetResults constructor
+            </summary>
+            <param name="results">API results object</param>
+        </member>
+        <member name="T:net.tellerapps.sunrise_sunset_client.Status">
+            <summary>
+            Status received from Sunrise Sunset
+            </summary>
+        </member>
+        <member name="F:net.tellerapps.sunrise_sunset_client.Status.UNKNOWN_STATUS">
+            <summary>
+            Unknows status - status is undocumented
+            </summary>
+        </member>
+        <member name="F:net.tellerapps.sunrise_sunset_client.Status.OK">
+            <summary>
+            OK
+            </summary>
+        </member>
+        <member name="F:net.tellerapps.sunrise_sunset_client.Status.INVALID_REQUEST">
+            <summary>
+            Invalid request
+            </summary>
+        </member>
+        <member name="F:net.tellerapps.sunrise_sunset_client.Status.INVALID_DATE">
+            <summary>
+            Invalid date received
+            </summary>
+        </member>
+        <member name="F:net.tellerapps.sunrise_sunset_client.Status.UNKNOWN_ERROR">
+            <summary>
+            Unknown error
+            </summary>
+        </member>
+        <member name="T:net.tellerapps.sunrise_sunset_client.SunriseSunsetException">
+            <summary>
+            Exception class for Sunrise Sunset errors
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetException.SunriseSunseResponseStatus">
+            <summary>
+            Status received from SunriseSunset API
+            </summary>
+        </member>
+        <member name="M:net.tellerapps.sunrise_sunset_client.SunriseSunsetException.#ctor(net.tellerapps.sunrise_sunset_client.Status,System.Exception)">
+            <summary>
+            Constructor for SunriseSunsetException
+            </summary>
+            <param name="sunriseSunseResponseStatus">Response status from SunriseSunset</param>
+            <param name="exception">Exception</param>
+        </member>
+        <member name="T:net.tellerapps.sunrise_sunset_client.SunriseSunsetHttpClient">
+            <summary>
+            Sunrise Sunset client
+            </summary>
+        </member>
+        <member name="M:net.tellerapps.sunrise_sunset_client.SunriseSunsetHttpClient.Get(System.Net.Http.HttpClient,System.Double,System.Double,System.DateTime)">
+            <summary>
+            Get data from Sunrise Sunset
+            </summary>
+            <param name="httpClient">HttpClient to use</param>
+            <param name="latitude">Latitude</param>
+            <param name="longitude">Longitude</param>
+            <param name="date">Date</param>
+            <returns>Sunrise Sunset data</returns>
+        </member>
+        <member name="T:net.tellerapps.sunrise_sunset_client.Results">
+            <summary>
+            Results class
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.Sunrise">
+            <summary>
+            Sunrise time
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.Sunset">
+            <summary>
+            Sunset time
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.SolarNoon">
+            <summary>
+            Solar noon
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.DayLength">
+            <summary>
+            Day length in seconds
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.CivilTwilightBegin">
+            <summary>
+            Civil twilight begin
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.CivilTwilightEnd">
+            <summary>
+            Civil twilight end
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.NauticalTwilightBegin">
+            <summary>
+            Nautical twilight begin
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.NauticalTwilightEnd">
+            <summary>
+            Nautical twilight end
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.AstronomicalTwilightBegin">
+            <summary>
+            Astronomical twilight begin
+            </summary>
+        </member>
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.AstronomicalTwilightEnd">
+            <summary>
+            Astrononical twilight end
+            </summary>
+        </member>
     </members>
 </doc>

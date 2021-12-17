@@ -12,12 +12,10 @@ namespace net.tellerapps.client_tests
         [TestMethod]
         public async Task TestGet()
         {
-            using HttpClient httpClient = new HttpClient();
-            SunriseSunsetHttpClient sunriseSunsetClient = new SunriseSunsetHttpClient();
-            Response response = await sunriseSunsetClient.Get(httpClient, 32.8244, 35.0658, new DateTime(2021, 12, 11));
-            Assert.IsNotNull(response);
-            Assert.AreEqual(Status.OK, response.Status);
-            Assert.AreEqual(new DateTimeOffset(2021, 12, 11, 4, 30, 45, TimeSpan.Zero), response.Results.Sunrise);
+            using HttpClient httpClient = new();
+            SunriseSunsetHttpClient sunriseSunsetClient = new();
+            SunriseSunsetResults response = await sunriseSunsetClient.Get(httpClient, 51.5010, -0.1406, new DateTime(2021, 1, 1));
+            Assert.AreEqual(new DateTimeOffset(2021, 1, 1, 8, 3, 57, TimeSpan.Zero), response.Sunrise);
         }
     }
 }

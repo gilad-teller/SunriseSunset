@@ -32,7 +32,7 @@ namespace WebApplication50.Controllers
         /// <param name="date">Date</param>
         /// <returns>Sunrise and sunset data</returns>
         [HttpGet]
-        public async Task<Response> Get(double latitude, double longitude, DateTime date)
+        public async Task<SunriseSunsetResults> Get(double latitude, double longitude, DateTime date)
         {
             return await _sunriseSunsetService.Get(latitude, longitude, date);
         }

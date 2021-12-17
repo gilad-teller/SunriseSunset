@@ -1,70 +1,69 @@
 ﻿using System;
-using System.Text.Json.Serialization;
 
 namespace net.tellerapps.sunrise_sunset_client
 {
     /// <summary>
-    /// Results class
+    /// SunriseSunsetResults class
     /// </summary>
-    public class Results
+    public class SunriseSunsetResults
     {
         /// <summary>
         /// Sunrise time
         /// </summary>
-        [JsonInclude]
         public DateTimeOffset Sunrise { get; private set; }
         /// <summary>
         /// Sunset time
         /// </summary>
-        [JsonInclude]
         public DateTimeOffset Sunset { get; private set; }
         /// <summary>
         /// Solar noon
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("solar_noon")]
         public DateTimeOffset SolarNoon { get; private set; }
         /// <summary>
-        /// Day length in seconds
+        /// Day length
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("day_length")]
-        public int DayLength { get; private set; }
+        public TimeSpan DayLength { get; private set; }
         /// <summary>
         /// Civil twilight begin
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("civil_twilight_begin")]
         public DateTimeOffset CivilTwilightBegin { get; private set; }
         /// <summary>
         /// Civil twilight end
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("civil_twilight_end")]
         public DateTimeOffset CivilTwilightEnd { get; private set; }
         /// <summary>
         /// Nautical twilight begin
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("nautical_twilight_begin")]
         public DateTimeOffset NauticalTwilightBegin { get; private set; }
         /// <summary>
         /// Nautical twilight end
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("nautical_twilight_end")]
         public DateTimeOffset NauticalTwilightEnd { get; private set; }
         /// <summary>
         /// Astronomical twilight begin
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("astronomical_twilight_begin")]
         public DateTimeOffset AstronomicalTwilightBegin { get; private set; }
         /// <summary>
         /// Astrononical twilight end
         /// </summary>
-        [JsonInclude]
-        [JsonPropertyName("astronomical_twilight_end")]
         public DateTimeOffset AstronomicalTwilightEnd { get; private set; }
+
+        /// <summary>
+        /// SunriseSunsetResults constructor
+        /// </summary>
+        /// <param name="results">API results object</param>
+        public SunriseSunsetResults(Results results)
+        {
+            Sunrise = results.Sunrise;
+            Sunset = results.Sunset;
+            SolarNoon = results.SolarNoon;
+            DayLength = TimeSpan.FromSeconds(results.DayLength);
+            CivilTwilightBegin = results.CivilTwilightBegin;
+            CivilTwilightEnd = results.CivilTwilightEnd;
+            NauticalTwilightBegin = results.NauticalTwilightBegin;
+            NauticalTwilightEnd = results.NauticalTwilightEnd;
+            AstronomicalTwilightBegin = results.AstronomicalTwilightBegin;
+            AstronomicalTwilightEnd = results.AstronomicalTwilightEnd;
+        }
     }
 }

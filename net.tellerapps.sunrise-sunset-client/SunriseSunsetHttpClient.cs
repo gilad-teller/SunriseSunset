@@ -8,9 +8,20 @@ using System.Web;
 
 namespace net.tellerapps.sunrise_sunset_client
 {
+    /// <summary>
+    /// Sunrise Sunset client
+    /// </summary>
     public class SunriseSunsetHttpClient
     {
-        public async Task<Response> Get(HttpClient httpClient, double latitude, double longitude, DateTime date)
+        /// <summary>
+        /// Get data from Sunrise Sunset
+        /// </summary>
+        /// <param name="httpClient">HttpClient to use</param>
+        /// <param name="latitude">Latitude</param>
+        /// <param name="longitude">Longitude</param>
+        /// <param name="date">Date</param>
+        /// <returns>Sunrise Sunset data</returns>
+        public async Task<SunriseSunsetResults> Get(HttpClient httpClient, double latitude, double longitude, DateTime date)
         {
             Response responseObj = null;
             try
@@ -27,7 +38,8 @@ namespace net.tellerapps.sunrise_sunset_client
                     PropertyNameCaseInsensitive = true
                 });
                 response.EnsureSuccessStatusCode();
-                return responseObj;
+                SunriseSunsetResults sunriseSunsetResults = new SunriseSunsetResults(responseObj.Results);
+                return sunriseSunsetResults;
             }
             catch (Exception ex)
             {
