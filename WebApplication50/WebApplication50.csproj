@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\net.tellerapps.sunrise-sunset-client.dependency-injection\net.tellerapps.sunrise-sunset-client.dependency-injection.csproj" />
-    <ProjectReference Include="..\net.tellerapps.sunrise-sunset-client\net.tellerapps.sunrise-sunset-client.csproj" />
   </ItemGroup>
 
 </Project>
