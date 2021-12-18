@@ -9,6 +9,7 @@
     <Description>Sunset Sunrise client with dependency injection support.
 Receiving data from https://sunrise-sunset.org/</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/gilad-teller/SunriseSunset</PackageProjectUrl>
     <RepositoryUrl>https://github.com/gilad-teller/SunriseSunset</RepositoryUrl>
     <RepositoryType>Git Hub</RepositoryType>
@@ -33,6 +34,10 @@ Receiving data from https://sunrise-sunset.org/</PackageReleaseNotes>
 
   <ItemGroup>
     <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>

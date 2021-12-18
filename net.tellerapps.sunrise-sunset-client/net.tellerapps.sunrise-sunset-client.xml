@@ -19,66 +19,60 @@
             Response status
             </summary>
         </member>
-        <member name="T:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults">
+        <member name="T:net.tellerapps.sunrise_sunset_client.Results">
             <summary>
-            SunriseSunsetResults class
+            Results class
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.Sunrise">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.Sunrise">
             <summary>
             Sunrise time
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.Sunset">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.Sunset">
             <summary>
             Sunset time
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.SolarNoon">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.SolarNoon">
             <summary>
             Solar noon
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.DayLength">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.DayLength">
             <summary>
-            Day length
+            Day length in seconds
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.CivilTwilightBegin">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.CivilTwilightBegin">
             <summary>
             Civil twilight begin
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.CivilTwilightEnd">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.CivilTwilightEnd">
             <summary>
             Civil twilight end
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.NauticalTwilightBegin">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.NauticalTwilightBegin">
             <summary>
             Nautical twilight begin
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.NauticalTwilightEnd">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.NauticalTwilightEnd">
             <summary>
             Nautical twilight end
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.AstronomicalTwilightBegin">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.AstronomicalTwilightBegin">
             <summary>
             Astronomical twilight begin
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.AstronomicalTwilightEnd">
+        <member name="P:net.tellerapps.sunrise_sunset_client.Results.AstronomicalTwilightEnd">
             <summary>
             Astrononical twilight end
             </summary>
-        </member>
-        <member name="M:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.#ctor(net.tellerapps.sunrise_sunset_client.Results)">
-            <summary>
-            SunriseSunsetResults constructor
-            </summary>
-            <param name="results">API results object</param>
         </member>
         <member name="T:net.tellerapps.sunrise_sunset_client.Status">
             <summary>
@@ -142,60 +136,66 @@
             <param name="date">Date</param>
             <returns>Sunrise Sunset data</returns>
         </member>
-        <member name="T:net.tellerapps.sunrise_sunset_client.Results">
+        <member name="T:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults">
             <summary>
-            Results class
+            SunriseSunsetResults class
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.Sunrise">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.Sunrise">
             <summary>
             Sunrise time
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.Sunset">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.Sunset">
             <summary>
             Sunset time
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.SolarNoon">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.SolarNoon">
             <summary>
             Solar noon
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.DayLength">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.DayLength">
             <summary>
-            Day length in seconds
+            Day length
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.CivilTwilightBegin">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.CivilTwilightBegin">
             <summary>
             Civil twilight begin
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.CivilTwilightEnd">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.CivilTwilightEnd">
             <summary>
             Civil twilight end
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.NauticalTwilightBegin">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.NauticalTwilightBegin">
             <summary>
             Nautical twilight begin
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.NauticalTwilightEnd">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.NauticalTwilightEnd">
             <summary>
             Nautical twilight end
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.AstronomicalTwilightBegin">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.AstronomicalTwilightBegin">
             <summary>
             Astronomical twilight begin
             </summary>
         </member>
-        <member name="P:net.tellerapps.sunrise_sunset_client.Results.AstronomicalTwilightEnd">
+        <member name="P:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.AstronomicalTwilightEnd">
             <summary>
             Astrononical twilight end
             </summary>
+        </member>
+        <member name="M:net.tellerapps.sunrise_sunset_client.SunriseSunsetResults.#ctor(net.tellerapps.sunrise_sunset_client.Results)">
+            <summary>
+            SunriseSunsetResults constructor
+            </summary>
+            <param name="results">API results object</param>
         </member>
     </members>
 </doc>
